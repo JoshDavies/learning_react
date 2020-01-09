@@ -1,4 +1,6 @@
 import React from 'react';
+import ToDoItem from './ToDoItem'
+import '../App.css';
 
 function MyInfo() {
   const firstName = "Josh"
@@ -27,10 +29,11 @@ function MyInfo() {
         <li>two</li>
         <li>three</li>
       </ul>
-      <input type="checkbox" />
-      <p>item 1 </p>
-      <input type="checkbox" />
-      <p>item 2 </p>
+      <div className="todo-list">
+        <ToDoItem />
+        <ToDoItem />
+        <ToDoItem />
+      </div>
     </div>
   )
 }
